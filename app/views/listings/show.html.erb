@@ -1,0 +1,10 @@
+<h1> <%= @listing.title %></h1>
+
+<ul>
+        <li> <%= @listing.listing_type.titleize %> </li>
+        <li> <%= @listing.address %> </li>
+        <li> <%= link_to "#{@listing.neighborhood.name}", neighborhood_path(@listing.neighborhood) %> </li>
+        <li> <%= @listing.description %> </li>
+        <li> Average Rating: <%= @listing.average_review_rating %> </li>
+        <li> $<%= @listing.price %> </li>  
+  </ul>
